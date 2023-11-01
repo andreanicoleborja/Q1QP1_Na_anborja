@@ -1,0 +1,398 @@
+/*importing google fonts*/
+@import url('https://fonts.cdnfonts.com/css/tex-gyre-termes');
+@import url('https://fonts.cdnfonts.com/css/georgia');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+/*setting the website's margin to 0*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*designing the navigation bar at the top of the screen*/
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: fixed;
+    height: relative;
+    padding: 10px;
+    width: 100vw;
+    background-color: #AF9179;
+    
+    
+}
+/*designing the image used for logo*/
+#navlogo img {
+    float:  right;
+    position: relative;
+    height: 5vh;
+    border-radius: 360px;
+    margin-right: 10vh;
+     
+}
+/*setting the links for the pages*/
+#links {
+    position: relative;
+    display: inline;
+}
+/*designing the links for the pages*/
+#links a {
+    font-size: 1.5em;
+    font-family: 'Georgia', sans-serif;
+    padding: 1.2vh;
+    margin-right: 4vh;
+    text-decoration: none;
+    color: #E4CFC1;
+    opacity: .60;
+    transition: 0.4s;
+    background-color: #AF9179;
+    display: flex;
+    flex-wrap: wrap;
+    height: relative;
+}
+
+/*designing the links when the user's mouse hovers on it*/
+#links a:hover{ 
+    opacity: 1;
+    margin: .5vh;
+    transition: 0.6s;
+    font-size: 1.7em;
+}
+
+/* setting up the content that wil be used for all of my pages*/
+#banner{
+    background-image: url(images/bg.jpg);
+    background-position: center;
+    height: 92vh;
+    width: 100%;
+    background-size: cover;
+    background-color: #ecebdee5;
+    overflow-y: scroll;
+}
+/*setting up the main table that'll be used to all of my pages*/
+#bannertext{
+    padding-top: 8vh;
+    padding-left: 3.5vh;
+    padding-right: 3.5vh;
+}
+
+/*designing and setting up the main title of the project in my home page*/
+#bannertext h1{
+    font-family: 'TeXGyreTermes', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    background: radial-gradient(circle, rgba(219,197,172,1) 0%, rgba(184,159,114,1) 18%, rgba(128,105,73,1) 35%, rgba(80,55,33,1) 68%, rgba(0,0,0,1) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px black;
+
+}
+
+/*designing the subheading in my home page*/
+#bannertext h4{
+    font-family: 'TeXGyreTermes', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #806949;
+}
+/*designing and setting up the table used in my about page*/
+#bannerbx{
+    position: static;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 1em;
+    margin: 4%;
+    background-color: #1b191623;
+    flex: 0;
+    margin-top: 13vh;
+    padding: 3.5vh;
+    border-radius: 30px;
+}
+
+/*setting and designing up one of the innerbox that that'll have the image for my about page*/
+.innerbx-1{ 
+    flex: 0;
+    align-self: flex-start;
+    background-color: #dbc5ac00;
+   
+}
+
+/*setting and designing the other innerbox beside the first innerbox that that'll have the contents of my about page*/
+.innerbx-2{
+    flex: 1;
+    align-self: flex-start;
+    background-color: #dbc5ac1a;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*designing the title fot my about page*/
+.innerbx-1 h2{
+    margin-left: 3%;
+    font-family: 'TeXGyreTermes';
+    font-size: 50px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,105,73,1) 22%, rgba(194,170,144,1) 34%, rgba(128,105,73,1) 47%, rgba(0,0,0,1) 64%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    -webkit-text-stroke: 0.5px black; 
+}
+
+/*designing the image used for my about page*/
+.innerbx img{
+    border-radius: 50px;
+
+}
+
+/*setting up the inner innerbox-2 for the contents of my about page*/ 
+.innerbx-4{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*designing the inner innerbox-2's texts/paragraph*/
+.innerbx-4 p{
+    padding: 1%;
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+    color: #503721;
+}
+
+/*setting up the box for my description part in the inner innerbox-2 (about page) */
+.box-5{
+    flex: 1;
+    align-self: flex-start;
+    
+}
+
+/*setting up the box beside box-5 for my interests/hobbies part in the inner innerbox-2 (about page) */
+.box-6{
+    flex: 1;
+    align-self: flex-start;
+    
+}
+
+/*setting up the box below the other boxes for my other details about me part in the inner innerbox-2 (about page) */
+.box-7{
+    flex: 3;
+    align-self: flex-end;
+
+}
+
+/*designing the boxes*/
+.bx{
+    background-color: #dbc5acee;
+    margin: 1%;
+    padding: 1%;
+}
+
+/*designing the texts in the boxes*/
+.bx h3{
+    margin-left: 3%;
+    font-family: 'TeXGyreTermes';
+    font-size: 35px;
+    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,105,73,1) 27%, rgba(194,170,144,1) 49%, rgba(128,105,73,1) 74%, rgba(0,0,0,1) 98%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+
+
+
+/*designing the heading text used in all pages except the home page*/
+#bannertext h2{
+    margin-top: 1%;
+    font-family: 'TeXGyreTermes', sans-serif;
+    font-size: 50px;
+    background: radial-gradient(circle, rgba(219,197,172,1) 0%, rgba(184,159,114,1) 18%, rgba(128,105,73,1) 35%, rgba(80,55,33,1) 68%, rgba(0,0,0,1) 100%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px black; 
+
+}
+
+/*designing the titles used in all pages except the home, intro, conclusion, and references page*/
+#bannertext h3{
+    margin-left: 3%;
+    font-family: 'TeXGyreTermes';
+    font-size: 45px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,105,73,1) 7%, rgba(194,170,144,1) 14%, rgba(128,105,73,1) 21%, rgba(0,0,0,1) 29%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+    -webkit-text-stroke: 0.5px black; 
+
+}
+
+/*designing the subtitles used in all pages except the home, about, introduction, and references page*/
+#bannertext h5{
+    margin-left: 2%;
+    font-family: 'TeXGyreTermes';
+    font-size: 30px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,105,73,1) 7%, rgba(194,170,144,1) 14%, rgba(128,105,73,1) 21%, rgba(0,0,0,1) 29%);
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px black; 
+ 
+}    
+
+
+
+/*designing the boxes of the paragraphs in intro, conclusion, and references*/
+#p{
+    margin-bottom: 3%;
+    background-color: #af9179c0; 
+    border-radius: 30px;
+   
+}
+
+/*designing the texts in the paragraphs*/
+#p p{
+    padding: 1%;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.3em;
+    color: #503721;
+}
+
+/*setting up the main box of every line/rows in quanti and quali pages*/
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 4%;
+}
+
+/*designing the box in every boxes in the containers in quanti and quali pages*/
+.box{
+    position: static;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.3em;
+    color: #503721;
+    background-color: #af917900;
+    
+}
+
+/*setting up and designing the paragraph in quanti and quali pages*/
+.box p{
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+
+/**designing the images shown in quanti and quali pages*/
+.box-1 img{
+    
+    height: 40vh;
+    width: 35vw;
+    flex-shrink: 0;
+}
+
+/*designing the images of ds, bwp, and pie graphs in quanti and quali pages*/
+.box-vh img{
+    height: 55vh;
+    width: 30vw;
+    flex-shrink: 0;
+}
+
+/*designing the boxes in the right side with the content of the images in quanti and quali pages*/
+.box-2{
+    flex: 1;
+    align-self: flex-start;
+    background-color: #DBC5AC;
+}
+
+/*designing the boxes in the left side with the content of the images beside it in quanti and quali pages*/
+.box-3{
+    flex: 1;
+    align-self: flex-end;
+    background-color: #DBC5AC;
+}
+
+/*designing the main boxes of every variables to separate them a bit in quali and quanti pages*/
+#space{
+    background-color:#af917973;
+    margin-bottom: 10%;
+    padding: .1px;
+    border-radius: 60px;
+}
+
+/*designing and setting up the footer for all pages*/
+#footer {
+    position: fixed;
+    height: 8%;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #AF9179;
+
+}
+
+/*setting the links for the other pages*/
+#footer #links {
+    display: inline
+}
+
+/*designing the links for the other pages for all of the pages*/
+#footer #links a {
+    font-size: 1.5em;
+    font-family: 'Georgia', sans-serif;
+    padding: 1.2vh;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    float: left;
+    text-decoration: none;
+    color: #E4CFC1;
+    opacity: .60;
+    transition: 0.4s;
+}
+
+/*designing the links for the socmed when the user's mouse hovers on it*/
+#footer #links a:hover{
+    opacity: 1;
+    margin: .5vh;
+    transition: 0.5s;
+    font-size: 1.7em;
+}
+
+/*setting up and designing the copyright of my website*/
+#footer p {
+    text-align: center;
+    font-family: 'Georgia', sans-serif;
+    color: #E4CFC1;
+    font-size: 1em;
+    margin: 3vh;
+}
+
+/*setting the links for the socmeds*/
+#footer .footerlinks {
+    display: block;
+    text-decoration: none;
+}
+
+/*designing the links for the socmeds for all of the pages*/
+#footer .footerlinks img {
+    height: 5vh;
+    float: right;
+    border-radius: 360px;
+    margin-top: -8vh;
+    margin-right: 1vh;
+}
+
+/*designing the link for my facebook profile*/
+#footer .footerlinks .fb {
+    margin-right: 5vh;
+}
+
+/*designing the link for my twitter profile*/
+#footer .footerlinks .twt {
+    margin-right: 17vh;
+}
+
+/*designing the link for my github profile*/
+#footer .footerlinks .gh {
+    margin-right: 11vh;
+}
+
+
+ 
